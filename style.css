@@ -80,20 +80,26 @@ body {
 /*  Home page Strat*/
 
 .home {
-  padding-top: 60px;
   width: 100%;
-  height: 80vh;
-
+  height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)),
-    url(/templepro/image/shivan.jpg);
+    url(/templepro/image/shivaicon.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .home .content {
   text-align: center;
-  padding-top: 280px;
+  padding-top: 420px;
 }
+
+@media (max-width: 1200px) {
+  .home .content {
+    text-align: center;
+    padding-top: 370px;
+  }
+}
+
 .home .content h5 {
   color: white;
   font-size: 38px;
@@ -102,7 +108,7 @@ body {
 }
 
 .home .content h1 {
-  color: white;
+  color: #0554f2;
   font-size: 70px;
   font-weight: 500;
   text-shadow: 0px 1px 1px black;
@@ -111,7 +117,7 @@ body {
 /* span tag change content start*/
 .changecontent::after {
   content: "";
-  color: #ffcc00;
+  color: #f25c05;
   text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
     0px -4px 10px rgba(255, 255, 255, 0.3);
   animation: changetext 10s infinite linear;
@@ -202,3 +208,22 @@ body {
 }
 
 /* aboud end */
+
+/* accordion Start */
+.accordion-button {
+  background-color: transparent; /* Set the background color to transparent */
+  color: #000; /* Set the text color */
+  border: none; /* Remove the border */
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  background-color: #f25c05;
+  color: #fff; /* Remove the focus box shadow */
+}
+
+.accordion-button.active {
+  /* Set the active background color to royalblue */
+  color: #fff; /* Set the text color for the active state */
+}
+/* accordion end */
