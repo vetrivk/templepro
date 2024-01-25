@@ -259,6 +259,35 @@
 
     <!-- accordion end -->
 
+    <!-- video section start -->
+    <div class="container-fluid d-flex align-items-center">
+      <img
+        src="/templepro/image/tem4.JPG"
+        class="img-fluid img-thumbnail col-sm-12 col-md-8 col-lg-8 mx-auto mother"
+        alt=""
+      />
+      <button class="btn btn-play child">
+        <i onclick="playVideo()" class="fa-solid fa-play fa-beat"></i>
+      </button>
+      <div class="clip">
+        <video id="myVideo" src="" controls></video>
+        <button
+          style="
+            color: white;
+            background-color: rgb(245, 41, 41);
+            padding: 5px;
+            font-size: 10px;
+            border-radius: 15px;
+          "
+          class="exit"
+          onclick="closeVideo()"
+        >
+          close
+        </button>
+      </div>
+    </div>
+    <!-- video section end -->
+
     <!-- demo -->
     <div class="container">
       <p style="text-align: justify" class="mt-5 bg-success">
