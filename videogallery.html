@@ -135,9 +135,6 @@
         margin-top: 100px;
         text-align: center;
       }
-      footer {
-        text-align: ;
-      }
     </style>
 
     <!-- HTML !-->
@@ -151,7 +148,6 @@
     <div class="container-fluid d-flex align-items-center">
       <img
         onclick="playVideo()"
-        onclick="playVideo()"
         src="image/videoplay1.jpg"
         class="img-fluid img-thumbnail col-sm-12 col-md-8 col-lg-8 mx-auto mother"
         alt=""
@@ -161,7 +157,11 @@
         style="z-index: 1; border: none"
         class="btn btn-play child"
       >
-        <!-- <i onclick="playVideo()" class="fa-solid fa-video fa-bounce"></i> -->
+        <!-- <i
+          style="color: royalblue"
+          onclick="playVideo()"
+          class="fa-solid fa-play fa-bounce"
+        ></i> -->
       </button>
       <div class="clip">
         <video
@@ -188,13 +188,12 @@
 
     <!-- footer start -->
     <footer
-      class="footer fixed mt-5"
+      class="fixed-bottom mt-5"
       style="background-color: black; padding: 20px 0; text-align: center"
       class="footer"
     >
       <!-- Your footer content goes here -->
       <p style="color: white">&copy; 2024 Your Website. All rights reserved.</p>
-      <p style="color: white">Sri Kalabhairavar</p>
     </footer>
     <!-- footer end -->
     <!-- bootstrap js file link -->

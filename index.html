@@ -263,14 +263,23 @@
     <!-- accordion end -->
 
     <!-- video section start -->
-    <div class="container-fluid d-flex align-items-center mt-5">
+    <div class="container-fluid d-flex align-items-center">
       <img
-        src="/templepro/image/home - Copy1.jpg"
+        onclick="playVideo()"
+        src="image/videoplay1.jpg"
         class="img-fluid img-thumbnail col-sm-12 col-md-8 col-lg-8 mx-auto mother"
         alt=""
       />
-      <button style="z-index: 1" class="btn btn-play child">
-        <i onclick="playVideo()" class="fa-solid fa-play fa-beat"></i>
+      <button
+        onclick="playVideo()"
+        style="z-index: 1; border: none"
+        class="btn btn-play child"
+      >
+        <!-- <i
+          style="color: royalblue"
+          onclick="playVideo()"
+          class="fa-solid fa-play fa-bounce"
+        ></i> -->
       </button>
       <div class="clip">
         <video
