@@ -83,7 +83,7 @@ body {
   width: 100%;
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)),
-    url(/templepro/image/shivaicon.jpg);
+    url(image/shivaicon.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
