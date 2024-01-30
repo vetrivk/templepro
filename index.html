@@ -33,7 +33,7 @@
     <!-- NavBar Start -->
     <nav
       class="navbar navbar-expand-lg fixed-top"
-      style="background-color: #010b13"
+      style="background-color: #f2f4f1"
     >
       <div class="container" id="header">
         <a
@@ -50,7 +50,7 @@
           aria-controls="offcanvasNavbar"
           aria-label="Toggle navigation"
         >
-          <span class="fas fa-bars" style="color: white"></span>
+          <span class="fas fa-bars" style="color: #f44144"></span>
         </button>
         <div
           class="offcanvas offcanvas-end"
@@ -66,7 +66,7 @@
               aria-label="Close"
             ></button>
           </div>
-          <div class="offcanvas-body" style="background-color: #010b13">
+          <div class="offcanvas-body" style="background-color: #f2f4f1">
             <ul
               class="navbar-nav navbar-dark justify-content-end flex-grow-1 pe-3"
             >
@@ -112,55 +112,66 @@
     </nav>
     <!-- NavBar End -->
 
-    <!-- home Page start -->
-    <div class="home">
-      <div class="content">
-        <h1>SRI <span class="changecontent"></span></h1>
-      </div>
-    </div>
-    <!-- home end -->
-
-    <!-- About page Start -->
-    <div>
-      <h1 class="text-center mb-4 mt-4 mb-lg-5 mt-lg-5" id="abouth1">
-        Sri Kalabairvar<br /><span
-          style="font-size: 20px; color: #010b13; text-shadow: none"
-          >History</span
-        >
-      </h1>
-    </div>
-
-    <div class="container" id="abouthome">
-      <!-- <h1 class="text-center mb-lg-5">Sri Kalabairvar</h1> -->
-      <div class="row">
-        <div class="col-xl-6 col-lg-6 col-12">
-          <img
-            src="image/about.JPG"
-            class="img-fluid img-thumbnail"
-            alt="Image"
-          />
+    <div style="background-color: #f2f4f1">
+      <!-- home Page start -->
+      <div class="home">
+        <div class="content">
+          <h1>SRI <span class="changecontent"></span></h1>
         </div>
-        <div class="col-xl-6 col-lg-6 col-12">
-          <!-- Paragraph visible on large screens -->
-          <p class="paragraph-lg" id="About" style="text-align: justify">
-            SRI KALABAIRAVAR TEMPLE is most famous temple in Virudhunagar
-            District Surrounding areas In India, Virudhunagar V.Nangoor
-            Kalabairavar temple comes under Tamilnadu Hindu Religion
-            Department..Kalabhairava is a Hindu deity, often associated with
-            fierce aspects of Lord Shiva. Kalabhairava is considered the
-            guardian deity of Kashi (Varanasi), and he is believed to be the one
-            who presides over the city.
-          </p>
-          <button
-            class="btn btn-primary p-2"
-            onclick="goToPage('history.html')"
+      </div>
+      <!-- home end -->
+
+      <!-- About page Start -->
+      <div>
+        <h1 class="text-center mb-4 mt-4 mb-lg-5 mt-lg-5" id="abouth1">
+          <span
+            style="
+              font-size: 20px;
+              color: #f44144;
+              font-size: 30px;
+              text-shadow: none;
+            "
+            >History of Sri Kalabairvar</span
           >
-            Read More
-          </button>
+        </h1>
+      </div>
+
+      <div class="container" id="abouthome">
+        <!-- <h1 class="text-center mb-lg-5">Sri Kalabairvar</h1> -->
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 col-12">
+            <img
+              src="image/about.JPG"
+              class="img-fluid img-thumbnail"
+              alt="Image"
+            />
+          </div>
+          <div class="col-xl-6 col-lg-6 col-12">
+            <!-- Paragraph visible on large screens -->
+            <p
+              class="paragraph-lg"
+              id="About"
+              style="text-align: justify; color: #2d3436"
+            >
+              SRI KALABAIRAVAR TEMPLE is most famous temple in Virudhunagar
+              District Surrounding areas In India, Virudhunagar V.Nangoor
+              Kalabairavar temple comes under Tamilnadu Hindu Religion
+              Department..Kalabhairava is a Hindu deity, often associated with
+              fierce aspects of Lord Shiva. Kalabhairava is considered the
+              guardian deity of Kashi (Varanasi), and he is believed to be the
+              one who presides over the city.
+            </p>
+            <button
+              class="btn btn-primary p-2"
+              onclick="goToPage('history.html')"
+            >
+              Read More
+            </button>
+          </div>
         </div>
       </div>
+      <!-- About page end -->
     </div>
-    <!-- About page end -->
 
     <!-- accordion section start -->
     <div style="margin-top: 20px; padding: 10px" class="container mt-5 mb-4">
@@ -325,6 +336,15 @@
       </p>
     </div>
     <!-- demo end -->
+
+    <!-- Sticky Button -->
+    <button
+      onclick="goToPage('tamilindex.html')"
+      title="Language Tamil"
+      class="sticky-btn"
+    >
+      Tamil
+    </button>
 
     <!-- footer start -->
     <footer
