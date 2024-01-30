@@ -210,12 +210,12 @@ body {
 
 @media screen and (max-width: 1200px) {
   #abouthome p {
-    margin-top: 20px;
+    padding-top: 20px;
   }
 }
 @media screen and (max-width: 500px) {
   #abouthome p {
-    margin-top: 10px;
+    padding-top: 10px;
   }
 }
 
