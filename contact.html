@@ -37,12 +37,51 @@
   </head>
   <body>
     <style>
+      @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@500&display=swap");
+
+      * {
+        box-sizing: border-box;
+      }
+
       .contact {
         margin-top: 100px;
         text-align: center;
+        color: #f1c40f;
+        margin-bottom: 30px;
       }
       body {
-        background-color: aliceblue;
+        background-color: white;
+      }
+
+      .box {
+        width: 600px;
+        height: 100vp;
+        background-color: white;
+        border-radius: 10px;
+
+        margin: 10px;
+        transition: all 0.3s;
+      }
+      .box dl dt {
+        color: #7f8c8d;
+        font-weight: 550;
+      }
+      .box:hover {
+        background-color: #ecf0f1;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
+          rgba(0, 0, 0, 0.24) 0px 1px 2px;
+        dt {
+          color: #1b1464;
+        }
+
+        span {
+          font-weight: 500;
+          font-size: 18px;
+          color: #e74c3c;
+        }
+      }
+      .lang {
+        font-family: "Noto Sans Tamil", sans-serif;
       }
     </style>
     <!-- NavBar Start -->
@@ -130,31 +169,56 @@
     <!-- contact Start -->
     <div class="container contact">
       <h1>Contact Us</h1>
-      <p>Sri kala bhairavar V.Nangoor</p>
     </div>
 
-    <div style="padding: 50px" class="container mt-4">
-      <!-- <h1 class="text-center mb-lg-5">Sri Kalabairvar</h1> -->
+    <div class="container contactbox justify-content-center">
+      <div class="row justify-content-center">
+        <div class="col-sm-12 col-lg-6 box">
+          <dl class="row p-3">
+            <dt class="col-sm-4">Temple Name</dt>
+            <dd class="col-sm-8"><span>Thiru Sri Kala Bhairavar</span></dd>
 
-      <div class="col-12">
-        <div class="col-8">
-          <dl class="row">
-            <dt class="col-sm-3">Temple Name</dt>
-            <dd class="col-sm-9">Thiru Sri Kala Bhairavar</dd>
-
-            <dt class="col-sm-3">Location</dt>
-            <dd class="col-sm-9">
-              <p>V.Nangoor</p>
-              <p>Virudhunagar District in Tamil Nadu</p>
+            <dt class="col-sm-4">Address</dt>
+            <dd class="col-sm-8">
+              <p>
+                V.Nangoor, Virudhunagar District, <br />
+                Tamil Nadu - 626106.
+              </p>
             </dd>
 
-            <dt class="col-sm-3">Contact Us</dt>
-            <dd class="col-sm-9">91 xxxxx xxxxx</dd>
+            <dt class="col-sm-4">Contact Person</dt>
+            <dd class="col-sm-8">bhairavar</dd>
+            <dt class="col-sm-4">Phone No</dt>
+            <dd class="col-sm-8">91 xxxxx xxxxx</dd>
+          </dl>
+        </div>
+        <div class="col-sm-12 col-lg-6 box lang">
+          <dl class="row p-3">
+            <dt class="col-sm-4">கோவில் பெயர்</dt>
+            <dd class="col-sm-8">
+              <span>திரு ஸ்ரீ காலபைரவர் கோவில்</span>
+            </dd>
+
+            <dt class="col-sm-4">முகவரி</dt>
+            <dd class="col-sm-8">
+              <p>
+                வி.நங்கூர், விருதுநகர் மாவட்டம், <br />
+                தமிழ்நாடு - 626106.
+              </p>
+            </dd>
+
+            <dt class="col-sm-4">தொடர்பு நபர்</dt>
+            <dd class="col-sm-8">bhairavar</dd>
+            <dt class="col-sm-4">கைபேசி</dt>
+            <dd class="col-sm-8">91 xxxxx xxxxx</dd>
           </dl>
         </div>
       </div>
     </div>
-    <div class="container"></div>
+
+    <!-- contact end -->
+
+    <!-- google map -->
     <div class="col-12 m-1">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31461.976089789638!2d78.16425505974121!3d9.702620343336054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00d8839a2e365f%3A0x445ade307416bde!2sV.%20NANGOOR!5e0!3m2!1sen!2sin!4v1706367338618!5m2!1sen!2sin"
