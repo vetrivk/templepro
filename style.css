@@ -12,6 +12,9 @@ body {
   background-color: white;
 }
 /* navbar */
+.navbar {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
 
 .navbar-brand {
   font-size: 25px;
@@ -220,25 +223,6 @@ body {
 }
 
 /* aboud end */
-
-/* accordion Start */
-.accordion-button {
-  background-color: transparent; /* Set the background color to transparent */
-  color: #000; /* Set the text color */
-  border: none; /* Remove the border */
-}
-
-.accordion-button:focus {
-  box-shadow: none;
-  background-color: #f25c05;
-  color: #fff; /* Remove the focus box shadow */
-}
-
-.accordion-button.active {
-  /* Set the active background color to royalblue */
-  color: #fff; /* Set the text color for the active state */
-}
-/* accordion end */
 
 /* video play :start */
 
