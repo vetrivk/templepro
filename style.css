@@ -23,9 +23,11 @@ body {
   letter-spacing: 1px;
 }
 .nav-link:visited,
-.nav-link.dropdown:visited {
+.nav-link.dropdown:visited,
+.nav-link.dropdown.show {
   color: gray;
 }
+
 .nav-link,
 .nav-link.dropdown {
   color: gray;
@@ -134,7 +136,7 @@ body {
 /* span tag change content start*/
 .changecontent::after {
   content: "";
-  color: #f44144;
+  color: #ffee00;
   animation: changetext 10s infinite linear;
 }
 @keyframes changetext {
