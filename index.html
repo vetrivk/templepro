@@ -113,7 +113,7 @@
       </div>
     </nav>
     <!-- NavBar End -->
-
+    <!-- About, home page start-->
     <div style="background-color: #f2f4f1">
       <!-- home Page start -->
       <div class="home">
@@ -180,49 +180,74 @@
           </div>
         </div>
       </div>
-      <!-- About page end -->
+    </div>
+    <!-- About, home page end -->
+
+    <!-- photo start -->
+    <div style="background-color: #e5ed8a">
+      <div class="container photo1">
+        <h1>Gallery</h1>
+      </div>
+      <div class="indexgalley">
+        <div class="galleryindex">
+          <img src="photogalley/1.JPG" alt="" />
+          <img src="photogalley/2.JPG" alt="" />
+          <img src="photogalley/3.JPG" alt="" />
+          <img src="photogalley/4.JPG" alt="" />
+          <img src="photogalley/5.JPG" alt="" />
+          <img src="photogalley/6.JPG" alt="" />
+        </div>
+      </div>
     </div>
 
+    <!-- photo end -->
+
     <!-- video section start -->
-    <div class="container-fluid d-flex align-items-center mt-4">
-      <img
-        onclick="playVideo()"
-        src="image/videoplay1.jpg"
-        class="img-fluid img-thumbnail col-sm-12 col-md-8 col-lg-8 mx-auto mother"
-        alt=""
-      />
-      <button
-        onclick="playVideo()"
-        style="z-index: 1; border: none"
-        class="btn btn-play child"
-      >
-        <!-- <i
+    <div style="background-color: #f2f4f1">
+      <div class="container photo1">
+        <h1>Video</h1>
+      </div>
+      <div class="container-fluid d-flex align-items-center pt-4">
+        <img
+          onclick="playVideo()"
+          src="image/videoplay1.jpg"
+          class="img-fluid img-thumbnail col-sm-12 col-md-8 col-lg-8 mx-auto mother"
+          alt=""
+        />
+        <button
+          onclick="playVideo()"
+          style="z-index: 1; border: none"
+          class="btn btn-play child"
+        >
+          <!-- <i
           style="color: royalblue"
           onclick="playVideo()"
           class="fa-solid fa-play fa-bounce"
         ></i> -->
-      </button>
-      <div class="clip">
-        <video
-          id="myVideo"
-          src="video/Kala_Pairaver_Video (1).mp4"
-          controls
-        ></video>
-        <button
-          style="
-            color: white;
-            background-color: rgb(245, 41, 41);
-            padding: 5px;
-            font-size: 10px;
-            border-radius: 15px;
-          "
-          class="exit"
-          onclick="closeVideo()"
-        >
-          close
         </button>
+        <div class="clip">
+          <video
+            id="myVideo"
+            src="video/Kala_Pairaver_Video (1).mp4"
+            controls
+          ></video>
+          <button
+            style="
+              color: white;
+              background-color: rgb(245, 41, 41);
+              padding: 5px;
+              font-size: 10px;
+              border-radius: 15px;
+            "
+            class="exit"
+            onclick="closeVideo()"
+          >
+            close
+          </button>
+        </div>
       </div>
     </div>
+
     <!-- video section end -->
 
     <!-- Sticky Button -->

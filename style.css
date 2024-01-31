@@ -226,6 +226,46 @@ body {
 
 /* aboud end */
 
+/* photo galley */
+.indexgalley {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 8%;
+  background-color: #e5ed8a;
+}
+.galleryindex {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 100px;
+}
+@media (max-width: 1110px) {
+  .galleryindex {
+    grid-gap: 20px;
+  }
+}
+.galleryindex img {
+  width: 100%;
+  cursor: pointer;
+  border-radius: 2%;
+  opacity: 90%;
+  color: #000000;
+}
+.galleryindex img:hover {
+  opacity: 100%;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+.photo1 {
+  text-align: center;
+  padding-top: 50px;
+  color: #f44144;
+}
+/* photo end */
+
 /* video play :start */
 
 .mother {
