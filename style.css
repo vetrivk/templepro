@@ -234,7 +234,6 @@ body {
   align-items: center;
   justify-content: center;
   padding: 50px 8%;
-  background-color: #e5ed8a;
 }
 .galleryindex {
   display: grid;
@@ -262,7 +261,7 @@ body {
 .photo1 {
   text-align: center;
   padding-top: 50px;
-  color: #f44144;
+  color: #f2f4f1;
 }
 /* photo end */
 
