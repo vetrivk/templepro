@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>photo</title>
+    <title>Kalabairvar</title>
     <!-- font-awesome cdn link -->
     <link
       rel="stylesheet"
@@ -25,17 +25,28 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
       rel="stylesheet"
     />
-    <!-- google font tamil -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil&display=swap"
-      rel="stylesheet"
-    />
     <!-- My css file -->
-    <link rel="stylesheet" href="tamilstyle.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
+    <style>
+      /* Custom styles for the accordion */
+      .accordion-button {
+        background-color: transparent; /* Set the background color to transparent */
+        color: #000; /* Set the text color */
+        border: none; /* Remove the border */
+      }
+
+      .accordion-button:focus {
+        box-shadow: none; /* Remove the focus box shadow */
+      }
+
+      .accordion-button.active {
+        background-color: royalblue; /* Set the active background color to royalblue */
+        color: #fff; /* Set the text color for the active state */
+      }
+    </style>
     <!-- NavBar Start -->
     <nav
       class="navbar navbar-expand-lg fixed-top"
@@ -114,7 +125,7 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="tamilcontact.html">தொடர்புக்கு</a>
+                <a class="nav-link" href="tamilcontact.html">தொடர்பிற்கு </a>
               </li>
             </ul>
           </div>
@@ -122,5 +133,136 @@
       </div>
     </nav>
     <!-- NavBar End -->
+
+    <!-- photo section start -->
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "poppins", sans-serif;
+      }
+      body {
+        background-color: white;
+        color: royalblue;
+      }
+      .photogalley {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 50px 8%;
+      }
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 30px;
+      }
+      .gallery img {
+        width: 100%;
+        cursor: pointer;
+        border-radius: 2%;
+        box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+          rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+          rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+      }
+      .gallery img:hover {
+        box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+      }
+      .open {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        background: rgba(0, 0, 0, 0.9);
+        z-index: 5;
+      }
+
+      .photo {
+        margin-top: 100px;
+        text-align: center;
+      }
+    </style>
+
+    <div class="container photo">
+      <h1>SRI Kalabhairavar Thiru Kovil</h1>
+      <p>V.Nangoor</p>
+    </div>
+
+    <div class="photogalley">
+      <div class="gallery">
+        <img src="photogalley/1.JPG" alt="" />
+        <img src="photogalley/2.JPG" alt="" />
+        <img src="photogalley/3.JPG" alt="" />
+        <img src="photogalley/4.JPG" alt="" />
+        <img src="photogalley/5.JPG" alt="" />
+        <img src="photogalley/6.JPG" alt="" />
+        <img src="photogalley/7.jpg" alt="" />
+        <img src="photogalley/8.JPG" alt="" />
+        <img src="photogalley/9.JPG" alt="" />
+        <img src="photogalley/10.JPG" alt="" />
+        <img src="photogalley/11.JPG" alt="" />
+        <img src="photogalley/12.JPG" alt="" />
+        <!-- new photo -->
+      </div>
+    </div>
+    <h1 style="text-align: center">God of Kalabairavar</h1>
+    <div class="container mt-5 gallery">
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <img class="img-fluid" src="photogalley/15.JPG" alt="" />
+        </div>
+        <div class="col-md-6 mb-4">
+          <img class="img-fluid" src="photogalley/16.JPG" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- photo section end -->
+
+    <!-- Sticky Button -->
+    <button
+      onclick="goToPage('tamilindex.html')"
+      title="Language Tamil"
+      class="sticky-btn"
+    >
+      Tamil
+    </button>
+
+    <!-- footer start -->
+    <div
+      class="footer"
+      style="background-color: black; padding: 20px 0; text-align: center"
+      class="footer"
+    >
+      <!-- Your footer content goes here -->
+      <p style="color: white">&copy; 2024 Your Website. All rights reserved.</p>
+    </div>
+    <!-- footer end -->
+
+    <!-- bootstrap js file link -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- my js file link -->
+    <script src="script.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var images = document.querySelectorAll(".gallery img");
+
+        images.forEach(function (img) {
+          img.addEventListener("click", function () {
+            img.classList.toggle("open");
+          });
+        });
+      });
+    </script>
   </body>
 </html>
