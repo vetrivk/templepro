@@ -10,6 +10,14 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
 
+    <!-- google font tamil -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- bootstrap css file link -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -26,25 +34,54 @@
       rel="stylesheet"
     />
     <!-- My css file -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="tamilstyle.css" />
   </head>
 
   <body>
     <style>
-      /* Custom styles for the accordion */
-      .accordion-button {
-        background-color: transparent; /* Set the background color to transparent */
-        color: #000; /* Set the text color */
-        border: none; /* Remove the border */
+      body {
+        background-color: white;
+        color: royalblue;
+        font-family: "Noto Sans Tamil", sans-serif;
+      }
+      .photogalley {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 50px 8%;
+      }
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 30px;
+      }
+      .gallery img {
+        width: 100%;
+        cursor: pointer;
+        border-radius: 2%;
+        box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+          rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+          rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+      }
+      .gallery img:hover {
+        box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+      }
+      .open {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        background: rgba(0, 0, 0, 0.9);
+        z-index: 5;
       }
 
-      .accordion-button:focus {
-        box-shadow: none; /* Remove the focus box shadow */
-      }
-
-      .accordion-button.active {
-        background-color: royalblue; /* Set the active background color to royalblue */
-        color: #fff; /* Set the text color for the active state */
+      .photo {
+        margin-top: 100px;
+        text-align: center;
       }
     </style>
     <!-- NavBar Start -->
@@ -90,10 +127,7 @@
               class="navbar-nav navbar-dark justify-content-end flex-grow-1 pe-3"
             >
               <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="tamilindex.html"
+                <a class="nav-link" aria-current="page" href="tamilindex.html"
                   >முகப்பு</a
                 >
               </li>
@@ -105,7 +139,7 @@
               </li>
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown"
+                  class="nav-link active dropdown"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                   href="#"
@@ -136,61 +170,9 @@
 
     <!-- photo section start -->
 
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: "poppins", sans-serif;
-      }
-      body {
-        background-color: white;
-        color: royalblue;
-      }
-      .photogalley {
-        width: 100%;
-        min-height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 50px 8%;
-      }
-      .gallery {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        grid-gap: 30px;
-      }
-      .gallery img {
-        width: 100%;
-        cursor: pointer;
-        border-radius: 2%;
-        box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
-          rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
-          rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-      }
-      .gallery img:hover {
-        box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
-      }
-      .open {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-        background: rgba(0, 0, 0, 0.9);
-        z-index: 5;
-      }
-
-      .photo {
-        margin-top: 100px;
-        text-align: center;
-      }
-    </style>
-
     <div class="container photo">
-      <h1>SRI Kalabhairavar Thiru Kovil</h1>
-      <p>V.Nangoor</p>
+      <h1>திரு ஸ்ரீ காலபைரவர் கோவில்</h1>
+      <p>வி.நங்கூர்</p>
     </div>
 
     <div class="photogalley">
@@ -210,14 +192,20 @@
         <!-- new photo -->
       </div>
     </div>
-    <h1 style="text-align: center">God of Kalabairavar</h1>
-    <div class="container mt-5 gallery">
-      <div class="row">
-        <div class="col-md-6 mb-4">
-          <img class="img-fluid" src="photogalley/15.JPG" alt="" />
+    <h1 style="text-align: center">ஸ்ரீ காலபைரவர்</h1>
+    <!-- <div class="container mt-5 gallery">
+      <div class="row justify-content-center">
+        <div class="col-md-10 col-lg-10 mb-4">
+          <img class="img-fluid" src="image/god bhairava.jpg" alt="" />
         </div>
-        <div class="col-md-6 mb-4">
-          <img class="img-fluid" src="photogalley/16.JPG" alt="" />
+      </div>
+    </div> -->
+
+    <!-- ----- -->
+    <div class="container mt-5 gallery">
+      <div class="row justify-content-center">
+        <div class="col-md-10 col-lg-10 mb-4">
+          <img class="img-fluid" src="image/gods1.gif" alt="" />
         </div>
       </div>
     </div>
@@ -225,7 +213,7 @@
 
     <!-- Sticky Button -->
     <button
-      onclick="goToPage('tamilindex.html')"
+      onclick="goToPage('index.html')"
       title="Language Tamil"
       class="sticky-btn"
     >
