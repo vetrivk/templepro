@@ -34,11 +34,20 @@ function closeVideo() {
 // });
 
 // AOS smooth
-
+/*
 var loader = document.getElementById("preloader");
 var navbar = document.getElementById("preloadnav");
 
 window.addEventListener("load", function () {
   loader.style.display = "none";
-  // navbar.classList.add("fixed-top");
+  navbar.classList.add("fixed-top");
+});
+*/
+
+var loader = document.getElementById("preloader");
+var navbar = document.getElementById("preloadnav");
+
+document.addEventListener("DOMContentLoaded", function () {
+  loader.style.display = "none";
+  navbar.classList.add("fixed-top");
 });
