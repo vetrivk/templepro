@@ -5,6 +5,7 @@ function goToPage(page) {
 
 // video play and close
 
+// ----------------------------------------------------
 function playVideo() {
   var video = document.getElementById("myVideo"); // Use the actual ID of your video element
   var clip = document.querySelector(".clip");
@@ -20,6 +21,7 @@ function closeVideo() {
   video.pause();
   clip.classList.remove("active");
 }
+// ---------------------------------------------------
 
 // end
 
@@ -30,3 +32,13 @@ function closeVideo() {
 //     disclaimer.remove();
 //   }
 // });
+
+// AOS smooth
+
+var loader = document.getElementById("preloader");
+var navbar = document.getElementById("preloadnav");
+
+window.addEventListener("load", function () {
+  loader.style.display = "none";
+  // navbar.classList.add("fixed-top");
+});
