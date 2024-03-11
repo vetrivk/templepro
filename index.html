@@ -17,6 +17,8 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <!-- ASO css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!-- google font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -30,9 +32,14 @@
   </head>
 
   <body>
+    <!-- preloader -->
+
+    <div id="preloader"></div>
+    <!-- <div class="boxd"></div> -->
     <!-- NavBar Start -->
     <nav
-      class="navbar navbar-expand-lg fixed-top"
+      id="preloadnav"
+      class="navbar navbar-expand-lg"
       style="background-color: #f2f4f1"
     >
       <div class="container" id="header">
@@ -124,13 +131,18 @@
       <!-- home end -->
 
       <!-- About page Start -->
-      <div>
+      <div data-aos="fade-up">
         <h1 class="text-center mb-4 mt-4 mb-lg-5 mt-lg-5" id="abouth1">
           <span>History of Sri Kalabairvar</span>
         </h1>
       </div>
 
-      <div class="container pb-5" id="abouthome">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        class="container pb-5"
+        id="abouthome"
+      >
         <!-- <h1 class="text-center mb-lg-5">Sri Kalabairvar</h1> -->
         <div class="row justify-content-center">
           <div style="text-align: center" class="col-xl-6 col-lg-6 col-12">
@@ -183,22 +195,52 @@
       </div>
       <div class="container mt-5">
         <div class="row">
-          <div class="col-sm-4 mb-4">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="200"
+            data-aos-once="true"
+            class="col-sm-4 mb-4"
+          >
             <img class="img-fluid" src="photogalley/10.JPG" alt="" />
           </div>
-          <div class="col-sm-4 mb-4">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="400"
+            data-aos-once="true"
+            class="col-sm-4 mb-4"
+          >
             <img class="img-fluid" src="photogalley/8.JPG" alt="" />
           </div>
-          <div class="col-sm-4 mb-4">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-once="true"
+            class="col-sm-4 mb-4"
+          >
             <img class="img-fluid" src="photogalley/9.JPG" alt="" />
           </div>
-          <div class="col-sm-4 mb-4">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-once="true"
+            class="col-sm-4 mb-4"
+          >
             <img class="img-fluid" src="photogalley/2.JPG" alt="" />
           </div>
-          <div class="col-sm-4 mb-4">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-once="true"
+            class="col-sm-4 mb-4"
+          >
             <img class="img-fluid" src="photogalley/1.JPG" alt="" />
           </div>
-          <div class="col-sm-4 mb-4">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            data-aos-once="true"
+            class="col-sm-4 mb-4"
+          >
             <img class="img-fluid" src="photogalley/5.JPG" alt="" />
           </div>
         </div>
@@ -211,27 +253,39 @@
 
     <!-- video section start -->
     <div style="background-color: #ffffff">
-      <div class="container photo1">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-once="true"
+        class="container photo1"
+      >
         <h1 style="color: #f44144">Video</h1>
       </div>
-      <div class="container-fluid d-flex align-items-center pt-4 pb-5">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1200"
+        data-aos-once="true"
+        class="container-fluid d-flex align-items-center pt-4 pb-5"
+      >
         <img
           onclick="playVideo()"
           src="image/videoplay1.jpg"
           class="img-fluid img-thumbnail col-sm-12 col-md-8 col-lg-8 mx-auto mother"
           alt=""
         />
+
         <button
           onclick="playVideo()"
           style="z-index: 1; border: none"
           class="btn btn-play child"
         >
           <!-- <i
-          style="color: royalblue"
-          onclick="playVideo()"
-          class="fa-solid fa-play fa-bounce"
-        ></i> -->
+  style="color: royalblue"
+  onclick="playVideo()"
+  class="fa-solid fa-play fa-bounce"
+></i> -->
         </button>
+
         <div class="clip">
           <video
             id="myVideo"
@@ -266,6 +320,10 @@
       Tamil
     </button>
 
+    <!-- ------------------------------------------------------------ -->
+
+    <!-- ------------------------------------------------------------ -->
+
     <!-- footer start -->
     <div
       class="footer"
@@ -286,5 +344,21 @@
 
     <!-- my js file link -->
     <script src="script.js"></script>
+
+    <!-- Aso js link -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- <script>
+      var loader = document.getElementById("preloader");
+      var navbar = document.getElementById("preloadnav");
+
+      window.addEventListener("load", function () {
+        loader.style.display = "none";
+        // navbar.classList.add("fixed-top");
+      });
+    </script> -->
   </body>
 </html>
